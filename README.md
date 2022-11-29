@@ -58,6 +58,7 @@ Users should be able to:
 - Flexbox
 - Media Queries
 - GitFlow workflow
+- React styled components
 
 ### What I learned
 
