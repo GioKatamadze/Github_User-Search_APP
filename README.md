@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Github User Search APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Design preview for the Github User Search APP](./src/assets/preview.jpg)
 
-## Available Scripts
+This is a solution to the [Github User Search APP](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In this project I mainly needed to focus on APP functionality and APP design.
 
-### `npm test`
+### The challenge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Challenge is to build out this GitHub user search app using the GitHub users API and make it looking as close to the design as possible.
 
-### `npm run build`
+Users should be able to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Search for GitHub users by their username
+- See relevant user information based on their search
+- Switch between light and dark themes
+- Bonus: Have the correct color scheme chosen for them based on their computer preferences.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [GitHub Code](https://github.com/GioKatamadze/Github_User-Search_APP)
+- Live Site URL: [GitHub LIve](https://giokatamadze.github.io/Tic-Tac-Toe//)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create initial project using React JS.
+- Create APP header – title and color changer.
+- Create user search bar – scope logo, input placeholder, search button.
+- Create results display top section – picture, name, @name, registration date.
+- Create user bio section.
+- Create user repositories and followers section.
+- Create location and links section.
+- Add color theme changer function.
+- Add Github API connection to the APP, for searching users.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React JS
+- Node JS
+- CSS custom properties
+- Mobile first approach
+- Flexbox
+- Media Queries
+- GitFlow workflow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+While working on this project, the main challenge that I overcame was to create React Js Functionality for the APP. After research and practicing different ways for resolving necessary steps, I wrote the code, that worked eventually and it gave me some confidence and knowledge of making APPs interactive, dynamic and functional.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continued development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I want to continue developing APPs to finally master coding and make more dynamic, interactive and functional projects.
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub - [Gio Katamadze](https://github.com/GioKatamadze)
+- Linkedin - [Gio Katamadze](https://www.linkedin.com/in/gio-katamadze-a409931a7)
