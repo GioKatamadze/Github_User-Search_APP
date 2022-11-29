@@ -24,38 +24,3 @@ img {
     max-width: 730px;
     height: 620px;
 }
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.header h1 {
-    font-family: Space Mono;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 39px;
-}
-
-
-
-
-
-
-.colorChanger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.colorChanger p {
-    margin-right: 16px;
-}
-
-.colorChangerIcon {
-    width: 20px;
-    height: 20px;
-}
