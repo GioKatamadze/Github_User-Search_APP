@@ -19,6 +19,10 @@ const StyledColorChangeDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export { StyledHeader, StyledColorChangeDiv };

@@ -3,21 +3,15 @@ import themeIcon from "./icon-sun.svg";
 
 function Header() {
   return (
-    <div className="wrapper">
-      <StyledHeader>
-        <h1>devfinder</h1>
-        <StyledColorChangeDiv>
-          <p>LIGHT</p>
-          <div style={{ width: "20px", height: "20px" }}>
-            <img
-              style={{ marginLeft: "16px" }}
-              src={themeIcon}
-              alt="sun icon"
-            />
-          </div>
-        </StyledColorChangeDiv>
-      </StyledHeader>
-    </div>
+    <StyledHeader>
+      <h1>devfinder</h1>
+      <StyledColorChangeDiv>
+        <p style={{ marginRight: "16px" }}>LIGHT</p>
+        <div style={{ width: "20px", height: "20px" }}>
+          <img src={themeIcon} alt="sun icon" />
+        </div>
+      </StyledColorChangeDiv>
+    </StyledHeader>
   );
 }
 

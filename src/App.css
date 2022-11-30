@@ -16,11 +16,19 @@ img {
     background-color: #141D2F;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .wrapper {
-    width: 80vw;
+    width: 85vw;
     max-width: 730px;
     height: 620px;
+    margin-top: 30px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .App {
+        align-items: center;
+    }
 }
