@@ -81,7 +81,7 @@ const StyledForm = styled.form`
     color: #ffffff;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     height: 70px;
     padding: 0 10px;
 
@@ -93,7 +93,7 @@ const StyledForm = styled.form`
     }
 
     .inputBar {
-      width: 450px;
+      width: 395px;
     }
 
     .inputSubmit {
