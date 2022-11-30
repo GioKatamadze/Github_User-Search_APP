@@ -3,8 +3,13 @@ import {
   StyledResultTop,
   StyledResultBio,
   StyledResultFollowers,
+  StyledResultLinks,
 } from "./ResultDisplay.styles.js";
 import ProfilePicture from "./profile-picture.png";
+import Location from "./icon-location.svg";
+import Company from "./icon-company.svg";
+import Twitter from "./icon-twitter.svg";
+import Website from "./icon-website.svg";
 
 function ResultDisplay() {
   return (
@@ -49,6 +54,29 @@ function ResultDisplay() {
               <p>9</p>
             </div>
           </StyledResultFollowers>
+
+          <StyledResultLinks>
+            <div className="linksBox">
+              <div className="linkItem">
+                <img src={Location} alt="icon" />
+                <p>San Francisco</p>
+              </div>
+              <div className="linkItem">
+                <img src={Website} alt="icon" />
+                <p>https://github.blog</p>
+              </div>
+            </div>
+            <div className="linksBox">
+              <div className="linkItem">
+                <img src={Twitter} alt="icon" />
+                <p>Not Available</p>
+              </div>
+              <div className="linkItem">
+                <img src={Company} alt="icon" />
+                <p>@github</p>
+              </div>
+            </div>
+          </StyledResultLinks>
         </div>
 
         {/*  */}
@@ -97,6 +125,29 @@ function ResultDisplay() {
                 <p>9</p>
               </div>
             </StyledResultFollowers>
+
+            <StyledResultLinks>
+              <div className="linksBox">
+                <div className="linkItem">
+                  <img src={Location} alt="icon" />
+                  <p>San Francisco</p>
+                </div>
+                <div className="linkItem">
+                  <img src={Website} alt="icon" />
+                  <p>https://github.blog</p>
+                </div>
+              </div>
+              <div className="linksBox">
+                <div className="linkItem">
+                  <img src={Twitter} alt="icon" />
+                  <p>Not Available</p>
+                </div>
+                <div className="linkItem">
+                  <img src={Company} alt="icon" />
+                  <p>@github</p>
+                </div>
+              </div>
+            </StyledResultLinks>
           </div>
         </div>
       </StyledResultDisplay>

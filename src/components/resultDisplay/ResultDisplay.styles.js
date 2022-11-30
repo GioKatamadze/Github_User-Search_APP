@@ -10,12 +10,13 @@ const StyledResultDisplay = styled.div`
   height: auto;
   border-radius: 15px;
   margin-top: 16px;
+  margin-bottom: 80px;
 
   .desktopLayout {
     display: none;
   }
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 800px) {
     align-items: flex-start;
     padding: 40px;
 
@@ -95,7 +96,7 @@ const StyledResultTop = styled.div`
     margin-top: 5px;
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 700px) {
     width: auto;
     justify-content: flex-start;
     align-items: flex-start;
@@ -122,7 +123,7 @@ const StyledResultTop = styled.div`
     }
   }
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 800px) {
     justify-content: space-between;
     align-items: flex-start;
 
@@ -162,7 +163,7 @@ const StyledResultBio = styled.div`
   line-height: 25px;
   margin-top: 30px;
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 700px) {
     font-size: 15px;
     line-height: 25px;
     margin-top: 24px;
@@ -194,7 +195,7 @@ const StyledResultFollowers = styled.div`
     margin-top: 8px;
   }
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 700px) {
     justify-content: space-around;
 
     h2 {
@@ -211,9 +212,47 @@ const StyledResultFollowers = styled.div`
   }
 `;
 
+const StyledResultLinks = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .linkItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 17px;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    justify-content: space-around;
+    flex-direction: row;
+
+    p {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+`;
+
 export {
   StyledResultDisplay,
   StyledResultTop,
   StyledResultBio,
   StyledResultFollowers,
+  StyledResultLinks,
 };
