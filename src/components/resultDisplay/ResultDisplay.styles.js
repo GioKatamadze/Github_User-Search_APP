@@ -11,9 +11,37 @@ const StyledResultDisplay = styled.div`
   border-radius: 15px;
   margin-top: 16px;
 
-  @media only screen and (min-width: 768px) {
+  .desktopLayout {
+    display: none;
+  }
+
+  @media only screen and (min-width: 700px) {
+    align-items: flex-start;
     height: 300px;
     padding: 40px;
+
+    .mobileLayout {
+      display: none;
+    }
+
+    .desktopLayout {
+      display: flex;
+    }
+
+    .desktopProfilePicture {
+      width: 115px;
+      height: 115px;
+    }
+
+    .desktopProfilePicture img {
+      border: none;
+      border-radius: 100%;
+    }
+
+    .profileinfo {
+      width: 75%;
+      padding-left: 37px;
+    }
   }
 `;
 
@@ -69,6 +97,7 @@ const StyledResultTop = styled.div`
   }
 
   @media only screen and (min-width: 500px) {
+    width: auto;
     justify-content: flex-start;
     align-items: flex-start;
 
@@ -98,6 +127,10 @@ const StyledResultTop = styled.div`
     justify-content: space-between;
     align-items: flex-start;
 
+    .profilePicture {
+      display: none;
+    }
+
     .mobileNames {
       display: none;
     }
@@ -124,4 +157,17 @@ const StyledResultTop = styled.div`
   }
 `;
 
-export { StyledResultDisplay, StyledResultTop };
+const StyledResultBio = styled.div`
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 30px;
+
+  @media only screen and (min-width: 500px) {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 24px;
+  }
+`;
+
+export { StyledResultDisplay, StyledResultTop, StyledResultBio };
