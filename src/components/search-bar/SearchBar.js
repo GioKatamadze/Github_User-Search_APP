@@ -3,7 +3,7 @@ import Icon from "./icon-search.svg";
 
 function SearchBar() {
   return (
-    <div className="wrapper">
+    <div className="searchBarWrapper">
       <StyledForm>
         <label>
           <img src={Icon} />

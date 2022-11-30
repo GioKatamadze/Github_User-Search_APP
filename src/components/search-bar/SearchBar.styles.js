@@ -17,11 +17,6 @@ const StyledForm = styled.form`
     cursor: pointer;
   }
 
-  .wrapper {
-    max-width: 730px;
-    margin-top: 35px;
-  }
-
   img {
     width: 20px;
     height: 20px;
@@ -81,7 +76,7 @@ const StyledForm = styled.form`
     color: #ffffff;
   }
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 800px) {
     height: 70px;
     padding: 0 10px;
 
