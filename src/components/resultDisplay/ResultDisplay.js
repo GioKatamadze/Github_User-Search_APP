@@ -2,6 +2,7 @@ import {
   StyledResultDisplay,
   StyledResultTop,
   StyledResultBio,
+  StyledResultFollowers,
 } from "./ResultDisplay.styles.js";
 import ProfilePicture from "./profile-picture.png";
 
@@ -33,7 +34,24 @@ function ResultDisplay() {
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </StyledResultBio>
+
+          <StyledResultFollowers>
+            <div className="Repos">
+              <h2>Repos</h2>
+              <p>8</p>
+            </div>
+            <div className="Repos">
+              <h2>Followers</h2>
+              <p>3938</p>
+            </div>
+            <div className="Repos">
+              <h2>Following</h2>
+              <p>9</p>
+            </div>
+          </StyledResultFollowers>
         </div>
+
+        {/*  */}
 
         <div className="desktopLayout">
           <div className="desktopProfilePicture">
@@ -64,6 +82,21 @@ function ResultDisplay() {
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros.
             </StyledResultBio>
+
+            <StyledResultFollowers>
+              <div className="Repos">
+                <h2>Repos</h2>
+                <p>8</p>
+              </div>
+              <div className="Repos">
+                <h2>Followers</h2>
+                <p>3938</p>
+              </div>
+              <div className="Repos">
+                <h2>Following</h2>
+                <p>9</p>
+              </div>
+            </StyledResultFollowers>
           </div>
         </div>
       </StyledResultDisplay>

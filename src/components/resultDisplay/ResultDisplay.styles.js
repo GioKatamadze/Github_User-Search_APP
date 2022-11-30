@@ -7,7 +7,7 @@ const StyledResultDisplay = styled.div`
   flex-direction: column;
   padding: 35px 24px 50px 24px;
   background-color: #1e2a47;
-  height: 300px;
+  height: auto;
   border-radius: 15px;
   margin-top: 16px;
 
@@ -17,7 +17,6 @@ const StyledResultDisplay = styled.div`
 
   @media only screen and (min-width: 700px) {
     align-items: flex-start;
-    height: 300px;
     padding: 40px;
 
     .mobileLayout {
@@ -170,4 +169,51 @@ const StyledResultBio = styled.div`
   }
 `;
 
-export { StyledResultDisplay, StyledResultTop, StyledResultBio };
+const StyledResultFollowers = styled.div`
+  background-color: #141d2f;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px 20px;
+
+  h2 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  @media only screen and (min-width: 500px) {
+    justify-content: space-around;
+
+    h2 {
+      font-size: 13px;
+      line-height: 19px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 33px;
+      text-align: left;
+    }
+  }
+`;
+
+export {
+  StyledResultDisplay,
+  StyledResultTop,
+  StyledResultBio,
+  StyledResultFollowers,
+};
