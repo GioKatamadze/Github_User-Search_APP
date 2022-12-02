@@ -1,85 +1,31 @@
-import {
-  StyledResultDisplay,
-  StyledResultTop,
-  StyledResultBio,
-  StyledResultFollowers,
-  StyledResultLinks,
-} from "./ResultDisplay.styles.js";
+import ResultTop from "./ResultTop/ResultTop.js";
+import ResultBio from "./ResultBio/ResultBio.js";
+import ResultFollowers from "./ResultFollowers/ResultFollowers.js";
+import ResultLinks from "./ResultLinks/ResultLinks.js";
+
+import StyledResultTop from "./ResultTop/ResultTop.styles.js";
+import StyledResultBio from "./ResultBio/ResultBio.styles.js";
+import StyledResultFollowers from "./ResultFollowers/ResultFollowers.styles.js";
+import StyledResultLinks from "./ResultLinks/ResultLinks.styles.js";
+import StyledResultDisplay from "./ResultDisplay.styles.js";
+
+import { isDarkValue } from "../header/Header.js";
 import ProfilePicture from "./profile-picture.png";
-import Location from "./icon-location.svg";
-import Company from "./icon-company.svg";
-import Twitter from "./icon-twitter.svg";
-import Website from "./icon-website.svg";
 
 function ResultDisplay() {
   return (
     <>
-      <StyledResultDisplay>
+      <StyledResultDisplay isdark={isDarkValue}>
         <div className="mobileLayout">
-          <StyledResultTop>
-            <div className="profilePicture">
-              <img src={ProfilePicture} />
-            </div>
-
-            <div className="mobileNames">
-              <h2>The Octocat</h2>
-              <p>@octocat</p>
-              <div className="date">Joined 25 Jan 2011</div>
-            </div>
-
-            <div className="desktopNames">
-              <h2>The Octocat</h2>
-              <p>@octocat</p>
-            </div>
-
-            <div className="desktopDate">Joined 25 Jan 2011</div>
-          </StyledResultTop>
-
-          <StyledResultBio>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros.
-          </StyledResultBio>
-
-          <StyledResultFollowers>
-            <div className="Repos">
-              <h2>Repos</h2>
-              <p>8</p>
-            </div>
-            <div className="Repos">
-              <h2>Followers</h2>
-              <p>3938</p>
-            </div>
-            <div className="Repos">
-              <h2>Following</h2>
-              <p>9</p>
-            </div>
+          <StyledResultTop isdark={isDarkValue}>{ResultTop()}</StyledResultTop>
+          <StyledResultBio isdark={isDarkValue}>{ResultBio()}</StyledResultBio>
+          <StyledResultFollowers isdark={isDarkValue}>
+            {ResultFollowers()}
           </StyledResultFollowers>
-
-          <StyledResultLinks>
-            <div className="linksBox">
-              <div className="linkItem">
-                <img src={Location} alt="icon" />
-                <p>San Francisco</p>
-              </div>
-              <div className="linkItem">
-                <img src={Website} alt="icon" />
-                <p>https://github.blog</p>
-              </div>
-            </div>
-            <div className="linksBox">
-              <div className="linkItem">
-                <img src={Twitter} alt="icon" />
-                <p>Not Available</p>
-              </div>
-              <div className="linkItem">
-                <img src={Company} alt="icon" />
-                <p>@github</p>
-              </div>
-            </div>
+          <StyledResultLinks isdark={isDarkValue}>
+            {ResultLinks()}
           </StyledResultLinks>
         </div>
-
-        {/*  */}
 
         <div className="desktopLayout">
           <div className="desktopProfilePicture">
@@ -87,66 +33,17 @@ function ResultDisplay() {
           </div>
 
           <div className="profileinfo">
-            <StyledResultTop>
-              <div className="profilePicture">
-                <img src={ProfilePicture} />
-              </div>
-
-              <div className="mobileNames">
-                <h2>The Octocat</h2>
-                <p>@octocat</p>
-                <div className="date">Joined 25 Jan 2011</div>
-              </div>
-
-              <div className="desktopNames">
-                <h2>The Octocat</h2>
-                <p>@octocat</p>
-              </div>
-
-              <div className="desktopDate">Joined 25 Jan 2011</div>
+            <StyledResultTop isdark={isDarkValue}>
+              {ResultTop()}
             </StyledResultTop>
-
-            <StyledResultBio>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros.
+            <StyledResultBio isdark={isDarkValue}>
+              {ResultBio()}
             </StyledResultBio>
-
-            <StyledResultFollowers>
-              <div className="Repos">
-                <h2>Repos</h2>
-                <p>8</p>
-              </div>
-              <div className="Repos">
-                <h2>Followers</h2>
-                <p>3938</p>
-              </div>
-              <div className="Repos">
-                <h2>Following</h2>
-                <p>9</p>
-              </div>
+            <StyledResultFollowers isdark={isDarkValue}>
+              {ResultFollowers()}
             </StyledResultFollowers>
-
-            <StyledResultLinks>
-              <div className="linksBox">
-                <div className="linkItem">
-                  <img src={Location} alt="icon" />
-                  <p>San Francisco</p>
-                </div>
-                <div className="linkItem">
-                  <img src={Website} alt="icon" />
-                  <p>https://github.blog</p>
-                </div>
-              </div>
-              <div className="linksBox">
-                <div className="linkItem">
-                  <img src={Twitter} alt="icon" />
-                  <p>Not Available</p>
-                </div>
-                <div className="linkItem">
-                  <img src={Company} alt="icon" />
-                  <p>@github</p>
-                </div>
-              </div>
+            <StyledResultLinks isdark={isDarkValue}>
+              {ResultLinks()}
             </StyledResultLinks>
           </div>
         </div>

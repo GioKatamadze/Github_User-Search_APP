@@ -3,6 +3,7 @@
 * {
     font-family: 'Space Mono', monospace;
     color: #FFFFFF;
+    transition: .3s;
     /* outline: 1px solid red; */
 }
 
@@ -22,16 +23,15 @@ img {
     margin-top: 30px;
 }
 
-.App {
+.app {
     height: 100%;
-    background-color: #141D2F;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
 @media only screen and (min-width: 700px) {
-    .App {
+    .app {
         align-items: center;
     }
 
