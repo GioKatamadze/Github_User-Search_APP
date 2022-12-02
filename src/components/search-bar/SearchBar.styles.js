@@ -7,9 +7,14 @@ const StyledForm = styled.form`
   flex-direction: row;
   flex-wrap: nowrap;
   height: 60px;
-  background-color: rgb(30, 42, 71);
+  background-color: ${(props) =>
+    props.isdark === "true" ? "rgb(30, 42, 71)" : "#FEFEFE"};
   border-radius: 15px;
   padding: 0 7px;
+  box-shadow: ${(props) =>
+    props.isdark === "true"
+      ? "none"
+      : "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"};
 
   &:hover,
   input:hover,
@@ -31,7 +36,9 @@ const StyledForm = styled.form`
     text-align: left;
     height: 45px;
     width: 48vw;
-    background-color: rgb(30, 42, 71);
+    color: ${(props) => (props.isdark === "true" ? "#FFFFFF" : "#222731")};
+    background-color: ${(props) =>
+      props.isdark === "true" ? "rgb(30, 42, 71)" : "#FEFEFE"};
     border: none;
   }
 
@@ -62,7 +69,8 @@ const StyledForm = styled.form`
 
   input:focus,
   input:active {
-    background-color: rgb(30, 42, 71);
+    background-color: ${(props) =>
+      props.isdark === "true" ? "rgb(30, 42, 71)" : "#FEFEFE"};
     border: none;
     outline: none;
     cursor: pointer;
@@ -73,7 +81,7 @@ const StyledForm = styled.form`
     font-weight: 400;
     text-align: left;
     vertical-align: middle;
-    color: #ffffff;
+    color: ${(props) => (props.isdark === "true" ? "#FFFFFF" : "#4B6A9B")};
   }
 
   @media only screen and (min-width: 800px) {
