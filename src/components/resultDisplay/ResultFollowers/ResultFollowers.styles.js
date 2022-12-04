@@ -28,7 +28,7 @@ const StyledResultFollowers = styled.div`
     color: ${(props) => (props.isdark === "true" ? "#FFFFFF" : "#2B3442")};
   }
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 500px) {
     justify-content: space-around;
 
     h2 {
@@ -41,6 +41,12 @@ const StyledResultFollowers = styled.div`
       font-size: 22px;
       line-height: 33px;
       text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .linksBox {
+      margin-right: 50px;
     }
   }
 `;
