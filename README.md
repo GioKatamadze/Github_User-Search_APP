@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Code](https://github.com/GioKatamadze/Github_User-Search_APP)
-- Live Site URL: [GitHub LIve](https://giokatamadze.github.io/Tic-Tac-Toe//)
+- Live Site URL: [Demo LIve](https://cool-fenglisu-1f4c6a.netlify.app/)
 
 ## My process
 
@@ -55,8 +55,6 @@ Users should be able to:
 - Node JS
 - CSS custom properties
 - Mobile first approach
-- Flexbox
-- Media Queries
 - GitFlow workflow
 - React styled components
 
