@@ -44,7 +44,7 @@ const StyledForm = styled.form`
 
   @media only screen and (max-width: 390px) {
     .inputBar {
-      width: 40vw;
+      width: 35vw;
     }
   }
 

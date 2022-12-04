@@ -53,7 +53,7 @@ Users should be able to:
 
 - React JS
 - Node JS
-- CSS custom properties
+- Github API
 - Mobile first approach
 - GitFlow workflow
 - React styled components
