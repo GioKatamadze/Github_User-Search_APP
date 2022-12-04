@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledForm = styled.form`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -22,11 +22,18 @@ const StyledForm = styled.form`
     cursor: pointer;
   }
 
+  label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   img {
     width: 20px;
     height: 20px;
     margin: 0 10px;
-    transform: translateY(4px);
   }
 
   .inputBar {
@@ -35,17 +42,21 @@ const StyledForm = styled.form`
     line-height: 25px;
     text-align: left;
     height: 45px;
-    width: 48vw;
+    flex-shrink: 2;
     color: ${(props) => (props.isdark === "true" ? "#FFFFFF" : "#222731")};
     background-color: ${(props) =>
       props.isdark === "true" ? "rgb(30, 42, 71)" : "#FEFEFE"};
     border: none;
   }
 
-  @media only screen and (max-width: 390px) {
-    .inputBar {
-      width: 35vw;
-    }
+  .inputDiv {
+    flex-basis: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    z-index: 1;
+    overflow-x: hidden;
   }
 
   .inputSubmit {
@@ -61,6 +72,7 @@ const StyledForm = styled.form`
     border: none;
     border-radius: 10px;
     transition: 0.2s;
+    z-index: 2;
   }
   .inputSubmit:hover {
     cursor: pointer;
@@ -95,13 +107,8 @@ const StyledForm = styled.form`
       margin-right: 25px;
     }
 
-    .inputBar {
-      width: 395px;
-    }
-
     .inputSubmit {
       height: 50px;
-      width: 105px;
       font-size: 16px;
     }
 

@@ -32,24 +32,22 @@ function SearchBar(props) {
   return (
     <div className="searchBarWrapper">
       <StyledForm isdark={isDarkValue}>
-        <label>
-          <img src={Icon} />
-          <input
-            defaultValue={props.userName}
-            id="userName"
-            placeholder="Search GitHub username…"
-            className="inputBar"
-            type="text"
-            name="name"
-            onChange={searchUser}
-          />
-        </label>
-        <input
-          onSubmit={searchUser}
-          className="inputSubmit"
-          type="submit"
-          value="Submit"
-        />
+        <div className="inputDiv">
+          <label>
+            <img src={Icon} />
+            <input
+              defaultValue={props.userName}
+              id="userName"
+              placeholder="Search GitHub username…"
+              className="inputBar"
+              type="text"
+              name="name"
+              onChange={searchUser}
+            />
+          </label>
+        </div>
+
+        <div className="inputSubmit">Search</div>
       </StyledForm>
     </div>
   );
