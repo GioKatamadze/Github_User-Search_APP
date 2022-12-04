@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Code](https://github.com/GioKatamadze/Github_User-Search_APP)
-- Live Site URL: [Demo LIve](https://roaring-crepe-88f8cc.netlify.app/)
+- Live Site URL: [Demo LIve](https://dashing-mandazi-c74cb8.netlify.app/)
 
 ## My process
 
