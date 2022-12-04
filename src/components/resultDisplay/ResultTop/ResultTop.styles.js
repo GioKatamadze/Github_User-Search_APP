@@ -53,7 +53,7 @@ const StyledResultTop = styled.div`
     color: ${(props) => (props.isdark === "true" ? "#FFFFFF" : "#697C9A")};
   }
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 500px) {
     width: auto;
     justify-content: flex-start;
     align-items: flex-start;
@@ -82,7 +82,7 @@ const StyledResultTop = styled.div`
     }
   }
 
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 700px) {
     justify-content: space-between;
     align-items: flex-start;
 

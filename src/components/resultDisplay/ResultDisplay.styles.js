@@ -17,23 +17,17 @@ const StyledResultDisplay = styled.div`
       ? "none"
       : "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"};
 
-  .desktopLayout {
+  .desktopProfilePicture {
     display: none;
   }
 
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 700px) {
+    flex-direction: row;
     align-items: flex-start;
     padding: 40px;
 
-    .mobileLayout {
-      display: none;
-    }
-
-    .desktopLayout {
-      display: flex;
-    }
-
     .desktopProfilePicture {
+      display: block;
       width: 115px;
       height: 115px;
     }
@@ -44,8 +38,8 @@ const StyledResultDisplay = styled.div`
     }
 
     .profileinfo {
-      width: 75%;
       padding-left: 37px;
+      width: 70%;
     }
   }
 `;

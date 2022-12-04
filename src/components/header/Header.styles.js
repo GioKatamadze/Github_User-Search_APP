@@ -27,11 +27,13 @@ const StyledThemeChanger = styled.div`
   }
 
   .imgDiv {
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
   }
 
   .imgDiv img {
+    max-width: 20px;
+    max-height: 20px;
     filter: ${(props) =>
       props.isdark === "true"
         ? "#FFFFFF"
